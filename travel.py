@@ -76,16 +76,12 @@ if st.button("Generate Travel Plan", use_container_width=True):
                 ("system", """You are an expert travel planner. Create detailed itineraries with:
                 - Transport options (cost, duration, pros/cons)
                 - Accommodation suggestions
-                - Daily itinerary with time slots
-                - Packing suggestions
-                - Local tips/etiquette
-                - Emergency contacts
                 Format using markdown with emojis and clear sections"""),
                 ("human", """Plan {duration}-day trip from {source} to {destination} starting {date}.
                 Preferred transport: {mode}. Interests: {interests}. Dietary: {diet}.""")
             ])
 
-            llm = ChatGoogleGenerativeAI(api_key=API_KEY, model="gemini-1.5-pro-latest")
+            llm = ChatGoogleGenerativeAI(api_key="AIzaSyCHGvCV_UsrQLx8EZrb58IQ9qqQEyRNcYI", model="gemini-1.5-pro-latest")
             chain = chat_template | llm | StrOutputParser()
 
             # Generate plan
