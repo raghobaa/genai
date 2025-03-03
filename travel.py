@@ -6,7 +6,7 @@ from langchain_core.output_parsers import StrOutputParser
 from datetime import date
 
 # Secure API Key Storage
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = "AIzaSyCHGvCV_UsrQLx8EZrb58IQ9qqQEyRNcYI"
 if not GOOGLE_API_KEY:
     st.error("❌ Google API Key missing. Set 'GOOGLE_API_KEY' as an environment variable.")
 
