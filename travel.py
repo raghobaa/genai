@@ -26,7 +26,7 @@ st.markdown("""
         padding: 1.5rem;
         margin: 1rem 0;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        background: white;
+        background: black;
     }
 </style>
 """, unsafe_allow_html=True)
