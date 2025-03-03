@@ -16,10 +16,10 @@ st.set_page_config(
 st.markdown("""
 <style>
     .stSlider > div > div > div > div {
-        background: #4CAF50 !important;
+        background: black!important;
     }
     .st-bw {
-        background-color: #f0f2f6;
+        background-color: black;
     }
     .travel-card {
         border-radius: 10px;
